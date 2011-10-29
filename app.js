@@ -30,13 +30,15 @@ app.configure('production', function(){
 
 app.get('/', function(req, res){
   res.render('index', {
-    title: 'Jo in Express'
+    title: 'Jo in Express',
+    layout: false
   });
 });
 
-app.get('/teste', function(req, res){
-  res.render('index', {
-    title: 'Jo in Express'
+app.get('/joapp/:app', function(req, res){
+  res.render('joapp', {
+    app: req.params.app,
+    layout: false
   });
 });
 
