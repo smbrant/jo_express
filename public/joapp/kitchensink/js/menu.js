@@ -21,7 +21,7 @@ joCache.set("menu", function() {
 	// hey, you don't have to make messy chained and
 	// inlined code; that's a coding style decision
 	// Jo doesn't pretend it should make for you.
-	card.setTitle("Jo Kitchen Sink Demo");
+	card.setTitle("Jo Demo in Node.js");
 	
 	return card;
 });
